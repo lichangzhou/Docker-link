@@ -3,8 +3,14 @@
 > **采集时间**：2026-11-23
 > **来源实例**：NAS `192.168.50.50:9080`，镜像 `lichangzhou/docker-link:v1.2.16`
 > **实况数据**：24 个容器（22 运行中）· 38 个镜像 · 6 个卷 · 11 个网络 · 29 个 compose 文件 · Docker Engine 28.5.2
-> **规格**：1600 × 1000 CSS 像素 @ 2x DPI（实际 3200 × 2000 PNG），全部为**真实运行实例**，非设计稿
-> **采集方式**：Playwright + Chromium（CDP `Page.captureScreenshot`），逐个视图切换后截图
+> **规格**：全部为**真实运行实例**，非设计稿
+>
+> | 目录 | 尺寸 | 用途 |
+> |---|---|---|
+> | `docs/assets/*.png` | **1600 × 1000** PNG（约 21 张，共 16 MB） | README 展示、网页内嵌 |
+> | `docs/assets/2x/*.png` | **3200 × 2000** PNG（7 张核心图，共 16 MB） | 印刷、封面、需要大图的平台（什么值得买头图、小红书、B站封面） |
+>
+> **采集方式**：Playwright + Chromium。视图切换用 `page.evaluate("switchView('x')")`；截图必须走 CDP `Page.captureScreenshot`（`page.screenshot()` 在本页面会因 CSS 动画永久卡死）；2x 版额外下发 `Emulation.setDeviceMetricsOverride {deviceScaleFactor: 2}`。
 
 ---
 
@@ -45,13 +51,14 @@
 
 | 平台 | 建议用图 | 理由 |
 |---|---|---|
-| **什么值得买** | `02-nav`（头图）+ `21-compose-detail` + `09-terminal` + `03-containers` | 值友看的是「界面好不好看 + 能不能干活」，头图用卡片墙最抓人；配图需 4 张以上、正文 1500 字左右 |
-| **linux.do** | `02-nav` + `09-terminal` + `10-agents` | 佬友看技术实现，终端与远程节点说明是重点 |
+| **什么值得买** | `2x/02-nav`（头图）+ `21-compose-detail` + `09-terminal` + `03-containers` | 值友看的是「界面好不好看 + 能不能干活」，头图用卡片墙最抓人；配图需 4 张以上、正文 1500 字左右 |
+| **linux.do** | `2x/02-nav` + `09-terminal` + `10-agents` | 佬友看技术实现，终端与远程节点说明是重点 |
 | **恩山** | `03-containers` + `08-files` | 纯技术贴，配 NAS 实景截图更有说服力 |
 | **掘金 / CSDN** | `21-compose-detail` + `12-monitor` | 技术向，配「文件即真相源」「自动恢复」两张最贴题 |
 | **阮一峰周刊 / HelloGitHub** | `02-nav` 单图即可 | Issue 只放一张，别刷图 |
 | **Reddit / HN** | `02-nav` + `21-compose-detail` | 海外用户先看整体观感，再看差异化功能 |
-| **视频封面（B站/抖音）** | `02-nav` 裁切 | 卡片墙颜色对比强，缩略图辨识度高 |
+| **小红书** | `2x/02-nav` 裁成 3:4 | 竖版裁切用卡片墙，颜色对比强 |
+| **视频封面（B站/抖音）** | `2x/02-nav` 裁切 | 1280×800 取卡片墙中部 |
 
 ---
 
