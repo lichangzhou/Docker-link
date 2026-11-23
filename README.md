@@ -20,11 +20,18 @@
 ## 📸 界面预览
 
 > 深色玻璃拟态（Liquid Glass）界面，主色 **绿色 `#34d399`**，风格借鉴自 [EvoLink](https://github.com/lichangzhou/EvoLink)。
-> 截图见 `docs/assets/`（欢迎 PR 贡献）。
+>
+> 以下截图均为**真实运行实例**（v1.2.16，NAS 上 24 个容器 / 38 个镜像的实况），非设计稿。完整素材清单见 [`docs/assets/`](docs/assets/)。
 
-| 仪表盘 | 容器管理 | 远程节点 |
+| 卡片墙导航 | 仪表盘 | 容器管理 |
 |:---:|:---:|:---:|
-| 卡片墙 / CPU 内存网络监控 | 列表·卡片双视图 / 批量操作 | 多主机 Agent / SSH 双通道 |
+| ![卡片墙导航](docs/assets/02-nav.png) | ![仪表盘](docs/assets/01-dashboard.png) | ![容器管理](docs/assets/03-containers.png) |
+| **Compose 项目**（文件即真相源） | **Web 终端**（真 PTY 交互） | **模板市场**（一键部署） |
+| ![Compose 项目](docs/assets/21-compose-detail.png) | ![Web 终端](docs/assets/09-terminal.png) | ![模板市场](docs/assets/13-templates.png) |
+| **文件管理** | **容器详情** | **远程节点接入** |
+| ![文件管理](docs/assets/08-files.png) | ![容器详情](docs/assets/20-container-detail.png) | ![远程节点](docs/assets/10-agents.png) |
+
+更多截图：镜像管理 · 卷 · 网络 · 图标库 · 监控与自动恢复 · 备份与跨机迁移 · 部署控制台 · 设置与失效恢复。
 
 ---
 
