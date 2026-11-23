@@ -187,6 +187,22 @@ Docker-Link（跑起来） → EvoLink（理清楚） → Playable（看下去�
 
 欢迎任何形式的贡献：提 Issue、报 Bug、补文档、传截图、做翻译。
 
+### 🐛 问题反馈
+
+**遇到 BUG 或有建议？在这里提，会直达维护者：**
+
+| 想反馈什么 | 入口 |
+|---|---|
+| BUG、报错、界面异常 | [提交问题报告](https://github.com/lichangzhou/Docker-link/issues/new?template=bug_report.yml) |
+| 功能建议 | [提交功能建议](https://github.com/lichangzhou/Docker-link/issues/new?template=feature_request.yml) |
+| 使用问题、怎么配置 | [讨论区](https://github.com/lichangzhou/Docker-link/discussions) |
+| 平台投稿 / 媒体合作 | [投稿登记表](https://github.com/lichangzhou/Docker-link/issues/new?template=promotion_submission.yml) |
+
+问题模板会要求填版本号、部署方式、宿主架构和浏览器，这几项填了才能直接定位。
+使用类问题请发讨论区，issue 留给真正的缺陷，这样问题列表不会被问法淹掉。
+
+⚠️ **切勿把 `docker.sock` 挂载路径、token 或服务器地址贴进 issue**，请先脱敏。
+
 ```bash
 git clone https://github.com/lichangzhou/Docker-link.git
 cd Docker-link

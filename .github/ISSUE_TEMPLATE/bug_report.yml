@@ -30,6 +30,7 @@ assignees: ''
 |------|---|
 | Docker-Link 版本 | <!-- docker exec docker-link cat /app/version --> |
 | 部署方式 | <!-- compose / docker run / agent --> |
+| 宿主架构 | <!-- x86_64 / aarch64，docker info | grep Arch --> |
 | Docker 版本 | <!-- docker version --> |
 | 操作系统 | <!-- e.g. Ubuntu 24.04 / fnOS --> |
 | 浏览器 | <!-- Chrome / Safari / Firefox + 版本 --> |
