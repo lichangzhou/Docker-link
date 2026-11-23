@@ -1,0 +1,39 @@
+# Byte‑compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cython compiled extensions
+*.so
+
+# Distribution / packaging
+build/
+*.egg-info/
+.dist/
+
+# Virtual environment
+venv/
+.env/
+
+# IDE / editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Docs generated artifacts
+site/
+
+# GitHub Pages output
+_docs/
