@@ -201,6 +201,15 @@ Docker-Link（跑起来） → EvoLink（理清楚） → Playable（看下去�
 问题模板会要求填版本号、部署方式、宿主架构和浏览器，这几项填了才能直接定位。
 使用类问题请发讨论区，issue 留给真正的缺陷，这样问题列表不会被问法淹掉。
 
+### 直接联系
+
+如果 issue / 讨论区不好用，也可以直接找我：
+
+| 渠道 | 联系方式 |
+|---|---|
+| 邮箱 | `1543079796@qq.com` |
+| QQ | `1543079796` |
+
 ⚠️ **切勿把 `docker.sock` 挂载路径、token 或服务器地址贴进 issue**，请先脱敏。
 
 ```bash
@@ -250,3 +259,7 @@ docker run -d --name docker-link --restart always -p 9080:9080 \
 ```
 
 **Security note**: access to this panel is equivalent to root access on the host. Do not expose it to the public internet without enabling authentication or placing it behind an HTTPS reverse proxy.
+
+**Bug reports and feedback** — [open an issue](https://github.com/lichangzhou/Docker-link/issues/new?template=bug_report.yml) · [discussions](https://github.com/lichangzhou/Docker-link/discussions)
+
+You can also reach me directly: email `1543079796@qq.com`, QQ `1543079796`.
