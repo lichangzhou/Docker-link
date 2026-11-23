@@ -3,6 +3,7 @@
 > **Target audience**: Homelab / self-hosted / DevOps engineers. Write as a maker sharing a real tool, not as marketing.
 > **Key rule**: On Reddit and HN, "please star my repo" reads as spam. Lead with the *problem*, show the screenshots, be honest about the limitations, let the link speak for itself.
 > **Link**: one link is enough — `https://github.com/lichangzhou/Docker-link`
+> **Ecosystem cross-promo**: see `生态互推片段库.md`. Use **fragment E** (plain text, no extra links) for HN / Reddit; **fragment F** (+2 links) for Product Hunt.
 
 ---
 
@@ -54,10 +55,19 @@ ARM hardware.
 https://github.com/lichangzhou/Docker-link
 ```
 
+**Sibling projects (same author)**
+
+The other two projects in this stack are mine as well: **EvoLink** keeps the
+media library straight (gap analysis, archive scraping, weighted release
+selection, 302 link swapping) and **Playable** is the playback end (Android /
+Windows / iOS, plays `.strm` files and follows the 302 redirects). Both live in
+the same GitHub account: `lichangzhou/Evolink`, `lichangzhou/Playable`.
+
 **Posting notes**
 - Best time: US Eastern morning, i.e. roughly **evening in China time**.
 - Do NOT ask for upvotes in the first hour; HN penalizes obvious vote solicitation.
 - Reply to every comment, especially technical ones, with substance.
+- Keep the sibling-projects paragraph as plain text — no extra links on HN.
 
 ---
 
@@ -106,6 +116,12 @@ Caveats, because they matter:
 
 MIT licensed, source here: https://github.com/lichangzhou/Docker-link
 
+The other two projects in this stack are mine as well: **EvoLink** keeps the
+media library straight (gap analysis, archive scraping, weighted release
+selection, 302 link swapping) and **Playable** is the playback end (Android /
+Windows / iOS, plays `.strm` files and follows the 302 redirects). Both live in
+the same GitHub account: `lichangzhou/Evolink`, `lichangzhou/Playable`.
+
 Happy to answer questions or take PRs. Especially if anyone runs ARM hardware and
 wants to help with multi-arch builds.
 ```
@@ -116,6 +132,7 @@ wants to help with multi-arch builds.
 - Don't cross-post the same text to multiple subs on the same day; some subs
   penalize it. Space them out or pick the one that fits best.
 - Never include referral/affiliate links (there are none here).
+- Keep the sibling-projects paragraph as plain text — no extra links on Reddit.
 
 ---
 
@@ -153,6 +170,20 @@ Highlights:
 MIT licensed. Runs on any Docker host with the socket mounted.
 ```
 
+**Description (extended, includes sibling projects)**
+
+```
+Three projects make up this stack, all written by me: Docker-Link runs the
+containers, EvoLink keeps the media library straight (gap analysis, archive
+scraping, weighted release selection, 302 link swapping), Playable is the
+playback end (Android / Windows / iOS, plays `.strm` files and follows the 302
+redirects).
+
+- Docker-Link — https://github.com/lichangzhou/Docker-link
+- EvoLink — https://github.com/lichangzhou/Evolink
+- Playable — https://github.com/lichangzhou/Playable
+```
+
 **First comment** (post this as the maker, immediately after launching):
 
 ```
@@ -164,6 +195,14 @@ with each other — the UI would show one state, the YAML on disk another, and
 
 The dashboard runs as a single container, needs no database, and reads your real
 compose directory rather than maintaining its own copy of it.
+
+The other two projects in this stack are mine as well: EvoLink keeps the media
+library straight (gap analysis, archive scraping, weighted release selection,
+302 link swapping) and Playable is the playback end (Android / Windows / iOS,
+plays .strm files and follows the 302 redirects).
+
+- EvoLink — https://github.com/lichangzhou/Evolink
+- Playable — https://github.com/lichangzhou/Playable
 
 Currently amd64-only and the auth story is "you set the env vars yourself" — I'm
 working on multi-arch builds. Would love feedback from people running this on

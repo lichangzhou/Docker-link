@@ -3,6 +3,7 @@
 > **平台特性**：这两个是「搜索消费型」平台，SEO 权重高但站外转化低。
 > **写法定向**：不要写成产品软文，写成**技术实现复盘** ——「Docker 面板是怎么做出来的：单文件前端 + 三层镜像更新兜底」。读者冲着技术点来的，顺带知道有这个东西，转化反而更好。
 > **外链策略**：正文末尾放 GitHub + Docker Hub（技术社区对来源链接宽容）。**不要**在正文中间反复插链接。
+> **生态互推**：用 `生态互推片段库.md` 片段 C，末尾追加 EvoLink / Playable 两个仓库链接（**+2 外链**，技术社区对多外链宽容）。
 > **关键词布局**（CSDN 必做）：Docker 可视化面板、Portainer 替代、Docker 管理面板、docker.sock、docker compose 可视化、NAS Docker 管理、Web 终端 docker exec、镜像 digest 比对。
 
 ---
@@ -121,6 +122,22 @@ docker run -d --name docker-link-agent --restart always \
   -v /var/run/docker.sock:/var/run/docker.sock:ro \
   lichangzhou/docker-link:latest
 ```
+
+### 附：这三个项目是怎么串起来的
+
+单独用任何一个都能跑，但串起来才是一条完整的链路：
+
+```
+Docker-Link（把容器跑起来 / 监控告警）
+     ↓
+EvoLink（把媒体库理清楚：缺口比对、归档刮削、13 维权重洗板、302 换链）
+     ↓
+Playable（Android / Windows / iOS 播放端，直接播 .strm，自动跟随 302）
+```
+
+分工上有个细节值得一提：**EvoLink 生成的 `.strm` 里写的是签名直链，用 HTTP 302 跳转到真实地址**，所以链接是有时效的。播放端必须跟随 302，不能把 `.strm` 里的 URL 当成最终地址缓存下来——否则过期后播不出来。Playable 就是按这个前提实现的。
+
+三个仓库：Docker-Link（本篇）、EvoLink（https://github.com/lichangzhou/Evolink）、Playable（https://github.com/lichangzhou/Playable）。
 
 ### 开源
 
