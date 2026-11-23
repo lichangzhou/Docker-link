@@ -150,6 +150,29 @@ docker run -d --name docker-link-agent --restart always \
 
 ---
 
+## 🧩 生态：三个项目一起用
+
+Docker-Link 不是孤立的面板。它是三个自建项目里负责**运维容器**的那一环：
+
+| 项目 | 定位 | 仓库 |
+|---|---|---|
+| **Docker-Link** | 运维整个栈：容器、镜像、卷、网络、Compose、文件管理、Web 终端、远程节点、监控告警 | 本仓库 |
+| **EvoLink** | 治理媒体库：索引 Emby / Plex / Jellyfin / Playable、缺口比对、归档刮削、权重洗板、115 → 302 换链 | [Evolink](https://github.com/lichangzhou/Evolink) · [EvoLink-CN](https://github.com/lichangzhou/EvoLink-CN) |
+| **Playable** | 播放端：Android / Windows / iOS，直接播 `.strm` 库，自动跟随 302 跳转 | [Playable](https://github.com/lichangzhou/Playable) |
+
+```
+Docker-Link（跑起来） → EvoLink（理清楚） → Playable（看下去）
+```
+
+- 用 Docker-Link 的 **Compose 一键部署** 拉起 EvoLink，用 **监控与自动恢复** 盯着它
+- EvoLink 产出的 `.strm` 媒体库由 **Playable** 直接播放，302 全程透明
+- **Playable** 同时也是 EvoLink 的索引源之一，只在 Playable 上存在的作品不会被算成缺失
+
+三个项目相互引用、各自独立，谁也不会绑架谁。详见
+[EvoLink 的生态文档](https://github.com/lichangzhou/Evolink/blob/main/docs/ECOSYSTEM.md)。
+
+---
+
 ## 📄 文档
 
 - [📘 推广方案（零预算版）](docs/推广方案.md) —— 全网核实后的平台选型：**什么值得买 / linux.do / 恩山 / NodeSeek / 阮一峰周刊** 等精准渠道、外链合规矩阵、各站发帖红线、0 预算 8 周节奏
