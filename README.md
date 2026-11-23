@@ -145,7 +145,8 @@ docker run -d --name docker-link-agent --restart always \
 
 ## 📄 文档
 
-- [📘 完整推广方案](docs/推广方案.md) —— 平台选型、内容矩阵、投放节奏、预算与 KPI
+- [📘 推广方案（零预算版）](docs/推广方案.md) —— 全网核实后的平台选型：**什么值得买 / linux.do / 恩山 / NodeSeek / 阮一峰周刊** 等精准渠道、外链合规矩阵、各站发帖红线、0 预算 8 周节奏
+- [✍️ 现成推广稿件](docs/posts/) —— 母稿 + 什么值得买 / linux.do / 掘金 / 阮一峰周刊 / Reddit-HN 专用版，可直接复制发布
 - [🛠️ 贡献指南](CONTRIBUTING.md)
 - [📝 部署用 compose 文件](docs/docker-compose.yml)
 
